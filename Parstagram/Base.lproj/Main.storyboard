@@ -128,9 +128,9 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pey-2I-G48">
-                                                    <rect key="frame" x="16" y="335" width="101.5" height="13"/>
+                                                    <rect key="frame" x="16" y="335" width="220" height="13"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" secondItem="pey-2I-G48" secondAttribute="height" multiplier="164:21" id="RvR-GO-igC"/>
+                                                        <constraint firstAttribute="width" secondItem="pey-2I-G48" secondAttribute="height" multiplier="164:21" constant="118.47619047619048" id="RvR-GO-igC"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -150,8 +150,9 @@
                                             <constraints>
                                                 <constraint firstItem="pey-2I-G48" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="nEw-bJ-F7h" secondAttribute="leadingMargin" id="1rg-pr-Rao"/>
                                                 <constraint firstItem="B2v-bU-lh8" firstAttribute="trailing" secondItem="nEw-bJ-F7h" secondAttribute="trailingMargin" id="6M7-bO-Dpk"/>
-                                                <constraint firstAttribute="trailing" secondItem="pey-2I-G48" secondAttribute="trailing" constant="257.5" id="77V-wG-zJ9"/>
+                                                <constraint firstAttribute="trailing" secondItem="pey-2I-G48" secondAttribute="trailing" constant="139" id="77V-wG-zJ9"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="B2v-bU-lh8" secondAttribute="bottom" constant="24" id="8YH-o6-NEN"/>
+                                                <constraint firstItem="B2v-bU-lh8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="nEw-bJ-F7h" secondAttribute="leading" constant="20" symbolic="YES" id="NEy-N0-1xy"/>
                                                 <constraint firstItem="xrW-au-3w7" firstAttribute="leading" secondItem="nEw-bJ-F7h" secondAttribute="leadingMargin" constant="1" id="TMt-X5-7Nr"/>
                                                 <constraint firstItem="pey-2I-G48" firstAttribute="top" secondItem="xrW-au-3w7" secondAttribute="bottom" constant="8" id="bdd-Td-9pL"/>
                                                 <constraint firstItem="xrW-au-3w7" firstAttribute="top" secondItem="nEw-bJ-F7h" secondAttribute="topMargin" constant="8" id="gYM-dH-rKq"/>
