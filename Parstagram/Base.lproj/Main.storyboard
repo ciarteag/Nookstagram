@@ -104,7 +104,7 @@
         <!--Feed View Controller-->
         <scene sceneID="EIG-Ke-FPl">
             <objects>
-                <viewController id="oDW-Kb-ar0" customClass="FeedViewController" sceneMemberID="viewController">
+                <viewController id="oDW-Kb-ar0" customClass="FeedViewController" customModule="Parstagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="alt-mE-P2j">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -128,7 +128,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pey-2I-G48">
-                                                    <rect key="frame" x="20" y="335" width="97.5" height="12.5"/>
+                                                    <rect key="frame" x="16" y="335" width="101.5" height="13"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="pey-2I-G48" secondAttribute="height" multiplier="164:21" id="RvR-GO-igC"/>
                                                     </constraints>
@@ -136,22 +136,27 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Nice photo " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B2v-bU-lh8">
-                                                    <rect key="frame" x="20" y="355" width="342" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nice photo " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B2v-bU-lh8">
+                                                    <rect key="frame" x="20" y="356" width="340" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="340" id="98n-yH-GrE"/>
+                                                        <constraint firstAttribute="height" constant="21" id="qph-BQ-PIv"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="pey-2I-G48" firstAttribute="leading" secondItem="nEw-bJ-F7h" secondAttribute="leadingMargin" constant="5" id="1rg-pr-Rao"/>
-                                                <constraint firstItem="B2v-bU-lh8" firstAttribute="top" secondItem="pey-2I-G48" secondAttribute="bottom" constant="8" id="82x-FH-Wo8"/>
-                                                <constraint firstItem="B2v-bU-lh8" firstAttribute="leading" secondItem="nEw-bJ-F7h" secondAttribute="leadingMargin" constant="5" id="Jcq-vF-Kre"/>
+                                                <constraint firstItem="pey-2I-G48" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="nEw-bJ-F7h" secondAttribute="leadingMargin" id="1rg-pr-Rao"/>
+                                                <constraint firstItem="B2v-bU-lh8" firstAttribute="trailing" secondItem="nEw-bJ-F7h" secondAttribute="trailingMargin" id="6M7-bO-Dpk"/>
+                                                <constraint firstAttribute="trailing" secondItem="pey-2I-G48" secondAttribute="trailing" constant="257.5" id="77V-wG-zJ9"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="B2v-bU-lh8" secondAttribute="bottom" constant="24" id="8YH-o6-NEN"/>
                                                 <constraint firstItem="xrW-au-3w7" firstAttribute="leading" secondItem="nEw-bJ-F7h" secondAttribute="leadingMargin" constant="1" id="TMt-X5-7Nr"/>
-                                                <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="B2v-bU-lh8" secondAttribute="bottom" constant="25" id="Y5f-pD-edf"/>
                                                 <constraint firstItem="pey-2I-G48" firstAttribute="top" secondItem="xrW-au-3w7" secondAttribute="bottom" constant="8" id="bdd-Td-9pL"/>
                                                 <constraint firstItem="xrW-au-3w7" firstAttribute="top" secondItem="nEw-bJ-F7h" secondAttribute="topMargin" constant="8" id="gYM-dH-rKq"/>
                                                 <constraint firstItem="xrW-au-3w7" firstAttribute="trailing" secondItem="nEw-bJ-F7h" secondAttribute="trailingMargin" constant="2" id="gqt-FB-hWS"/>
+                                                <constraint firstItem="B2v-bU-lh8" firstAttribute="top" secondItem="pey-2I-G48" secondAttribute="bottom" constant="8" id="wRk-Uy-Qew"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
