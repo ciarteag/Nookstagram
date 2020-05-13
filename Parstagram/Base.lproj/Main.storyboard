@@ -174,7 +174,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="tableView" destination="xcB-nD-urZ" id="mxF-4l-NTF"/>
+                        <outlet property="tableView" destination="xcB-nD-urZ" id="4pD-ES-s8z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FAx-Aw-s19" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
