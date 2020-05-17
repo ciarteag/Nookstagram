@@ -10,7 +10,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Parstagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="Parstagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -132,7 +132,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="pey-2I-G48" secondAttribute="height" multiplier="164:21" constant="118.47619047619048" id="RvR-GO-igC"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -173,6 +173,11 @@
                         <viewLayoutGuide key="safeArea" id="ML3-cv-keV"/>
                     </view>
                     <navigationItem key="navigationItem" id="TI2-rW-iE1">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="w9v-lN-dBD">
+                            <connections>
+                                <action selector="onLogoutButton:" destination="oDW-Kb-ar0" id="6ck-D7-Mkr"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="insta_camera_btn" id="sD1-iY-xqD">
                             <connections>
                                 <segue destination="Ywb-xq-sJ2" kind="presentation" id="0v8-xt-DLL"/>
@@ -239,7 +244,7 @@
         <!--Navigation Controller-->
         <scene sceneID="SdE-bA-p0x">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZVi-eT-sZ1" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="FeedNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="ZVi-eT-sZ1" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ulz-yx-S65">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
